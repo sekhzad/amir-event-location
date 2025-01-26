@@ -16,7 +16,7 @@ import Admin from './components/Admin';
 
 function App() {
     return (
-        <Router basename="/myapp"> {/* Set the basename to match your deployment path */}
+        <Router basename="/amir-event-location">
             <Routes>
                 {/* Main Page */}
                 <Route 

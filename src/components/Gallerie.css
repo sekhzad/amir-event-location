@@ -1,0 +1,164 @@
+.Gallerie {
+  padding: 50px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #D4AF37;
+  background: #fff; /* Clean white background */
+  border: 3px solid #D4AF37; /* Golden border */
+  border-radius: 10px; /* Rounded edges */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  margin: 10px;
+  margin-bottom: 80px;
+  animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+.breadcrumb {
+  align-self: flex-start; /* Align breadcrumb to the left */
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.Gallerie h2 {
+  font-size: 36px; /* Larger font for titles */
+  margin-bottom: 30px;
+  color: #D4AF37;
+  text-transform: uppercase; /* Modern uppercase style */
+  letter-spacing: 1.5px; /* Add spacing for readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+  background: #fff; /* Clean white background */
+  padding: 20px;
+  border: 3px solid #D4AF37;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1.2s ease-in-out; /* Smooth title appearance */
+}
+
+.gallery-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  background: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  overflow: hidden;
+}
+
+.main-image-container {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure the image stays inside the container */
+}
+
+.main-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transitions */
+  border-radius: 10px;
+}
+
+.main-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  opacity: 0.95;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Adjust gap between thumbnails */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow thumbnails to wrap */
+  margin-bottom: 60px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; /* Smooth hover effects */
+  border: 2px solid transparent;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow for focus */
+}
+
+.active-thumbnail {
+  border-color: #D4AF37;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Highlight active thumbnail */
+  transform: scale(1.1); /* Slight zoom for active thumbnail */
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 50px;
+  color: #D4AF37;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  padding: 10px;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.arrow.prev {
+  left: 15px;
+}
+
+.arrow.next {
+  right: 15px;
+}
+
+.arrow:hover {
+  color: #0056b3; /* Change color on hover */
+  transform: translateY(-50%) scale(1.2); /* Slightly enlarge on hover */
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+      height: 300px;
+      width: 90%;
+  }
+
+  .main-image {
+      max-height: 300px;
+  }
+
+  .arrow {
+      font-size: 35px;
+  }
+
+  .thumbnail {
+      width: 60px;
+      height: 60px;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

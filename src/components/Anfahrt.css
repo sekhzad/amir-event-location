@@ -1,0 +1,144 @@
+.anfahrt {
+    padding: 50px 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    color: #D4AF37;
+    background: #fff; /* Clean white background */
+    border: 3px solid #D4AF37; /* Golden border */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    margin: 10px;
+    margin-bottom: 100px;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+.anfahrt h2 {
+    font-size: 36px; /* Larger font for emphasis */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Modern uppercase style */
+    letter-spacing: 1.5px;
+    color: #D4AF37;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+}
+
+.anfahrt iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.anfahrt iframe:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Spacing between contact items */
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    font-size: 28px; /* Larger icon size for better visibility */
+    color: #D4AF37;
+}
+
+.contact-address {
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    font-weight: bold; /* Make the address stand out */
+}
+
+.copy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #D4AF37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #b38e2e; /* Slightly darker shade on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.copy-status {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #28a745; /* Green for success messages */
+    font-style: italic; /* Make it stand out */
+}
+
+.breadcrumbs {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.breadcrumbs a {
+    color: #007bff;
+    text-decoration: underline; /* Underline for better visibility */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.breadcrumbs a:hover {
+    color: #0056b3; /* Highlighted color on hover */
+}
+
+.map-container {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    background: #fff; /* White background for contrast */
+    padding: 20px;
+    border: 2px solid #D4AF37; /* Golden border */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .anfahrt iframe {
+        height: 300px; /* Adjust height for mobile */
+    }
+
+    .contact-item {
+        flex-direction: column; /* Stack contact items vertically */
+        gap: 10px;
+    }
+
+    .contact-address {
+        text-align: center; /* Center-align for smaller screens */
+    }
+
+    .copy-button {
+        font-size: 12px; /* Adjust button size for smaller screens */
+        padding: 6px 10px;
+    }
+}

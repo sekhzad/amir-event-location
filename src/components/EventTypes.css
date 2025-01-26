@@ -1,0 +1,80 @@
+.event-types {
+    padding: 50px 20px;
+    background-color: #fff; /* Clean white background */
+    text-align: center;
+    color: #D4AF37; /* Gold color for text */
+    border: 3px solid #D4AF37; /* Golden border */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    margin: 10px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+.event-types h2 {
+    font-size: 36px; /* Dynamic font size */
+    font-weight: bold;
+    text-transform: uppercase; /* Modern uppercase style */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    margin-bottom: 20px;
+}
+
+.event-types p {
+    font-size: 16px; /* Dynamic font size */
+    color: #555; /* Neutral text color for better readability */
+    margin-bottom: 30px;
+    line-height: 1.6; /* Better line spacing */
+}
+
+.event-types .event-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Consistent spacing between event cards */
+}
+
+.event-types .event-card {
+    background: linear-gradient(to bottom right, #ffffff, #f9f9f9); /* Subtle gradient background */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd; /* Clean border */
+    border-radius: 10px; /* Rounded edges for a modern look */
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    color: #333; /* Text color */
+}
+
+.event-types .event-card:hover {
+    transform: translateY(-5px) scale(1.05); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    background: linear-gradient(to bottom right, #f9f9f9, #ffffff); /* Reverse gradient on hover */
+}
+
+.event-types .event-card h3 {
+    font-size: 20px; /* Dynamic font size */
+    font-weight: bold;
+    color: #D4AF37; /* Gold color for headers */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    margin-bottom: 10px;
+}
+
+.event-types .event-card p {
+    font-size: 14px; /* Adjusted font size */
+    color: #666; /* Softer color for descriptions */
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Smooth fade-in animation for .event-types */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

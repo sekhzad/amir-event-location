@@ -1,0 +1,182 @@
+.FAQ {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #D4AF37;
+    background: #fff; /* Clean white background */
+    border: 3px solid #D4AF37; /* Golden border */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    margin: 10px;
+    margin-bottom: 100px;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+.FAQ h2 {
+    font-size: 36px; /* Larger font for emphasis */
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Modern uppercase style */
+    letter-spacing: 1.5px;
+    color: #D4AF37;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+    background: #fff;
+    padding: 20px;
+    border: 3px solid #D4AF37;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.FAQ-search {
+    margin-bottom: 20px;
+    animation: fadeIn 1.2s ease-in-out; /* Smooth fade-in animation */
+}
+
+.FAQ-search input {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.FAQ-search input:focus {
+    border-color: #D4AF37; /* Highlight border on focus */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Enhanced focus shadow */
+}
+
+.FAQ-category {
+    margin-bottom: 30px;
+}
+
+.FAQ-category h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase; /* Add emphasis */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for category titles */
+}
+
+.FAQ-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px; /* Increased width for larger layout */
+    margin: 0 auto;
+}
+
+.FAQ-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.FAQ-item:hover {
+    background: #fff; /* Change background on hover */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.FAQ-item.expanded {
+    background: #eaeaea;
+}
+
+.FAQ-item .FAQ-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.FAQ-item h4 {
+    font-size: 20px; /* Larger question font */
+    margin: 0;
+    color: #D4AF37; /* Highlighted color for questions */
+    text-transform: capitalize;
+}
+
+.FAQ-item span {
+    font-size: 22px;
+    color: #D4AF37;
+    transition: transform 0.3s ease;
+}
+
+.FAQ-item:hover span {
+    transform: rotate(90deg); /* Rotate arrow on hover */
+}
+
+.FAQ-item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.6; /* Improved line spacing for better readability */
+    text-align: justify; /* Align text for better presentation */
+}
+
+.FAQ-cta {
+    margin-top: 30px;
+    padding-bottom: 100px;
+    animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in animation */
+}
+
+.FAQ-cta p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase; /* Add emphasis */
+}
+
+.FAQ-cta .btn-primary {
+    background: #D4AF37;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px; /* Rounded edges */
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.FAQ-cta .btn-primary:hover {
+    background: #b38e2e;
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+@media (max-width: 768px) {
+    .FAQ-search input {
+        width: 100%;
+    }
+
+    .FAQ-item .FAQ-question {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .FAQ-item span {
+        align-self: flex-end;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

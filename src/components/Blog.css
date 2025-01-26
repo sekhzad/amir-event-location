@@ -1,0 +1,197 @@
+.blog {
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #D4AF37;
+    background: #fff; /* White background */
+    border: 3px solid #D4AF37; /* Golden border */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    margin: 10px;
+    margin-bottom: 100px;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+.blog h2 {
+    font-size: 36px; /* Larger font for emphasis */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #D4AF37;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+    margin-bottom: 40px;
+    border: 3px solid #D4AF37; /* Golden border */
+    border-radius: 10px; /* Rounded edges */
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.breadcrumb {
+    align-self: flex-start; /* Align breadcrumb to the left */
+    margin-bottom: 10px;
+    font-size: 14px; /* Slightly smaller for subtlety */
+    color: #333;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 2px solid #D4AF37; /* Golden border */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.post-header {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.post-image img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.post-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.post-info {
+    flex: 1;
+    text-align: left;
+}
+
+.post-info h3 {
+    font-size: 28px; /* Larger font for post titles */
+    margin-bottom: 5px;
+    color: #333;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for titles */
+}
+
+.post-snippet {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.blog-post.expanded .post-snippet {
+    display: none; /* Hide short snippet when expanded */
+}
+
+.post-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background: #D4AF37;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #b38e2e;
+    transform: translateY(-3px); /* Lift button on hover */
+}
+
+.share-button {
+    background: #eee;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.share-button:hover {
+    background: #ddd;
+    transform: translateY(-3px); /* Lift button on hover */
+}
+
+.post-content {
+    padding: 20px;
+    text-align: left;
+    display: none; /* Hide full content by default */
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify; /* Align content for better readability */
+}
+
+.blog-post.expanded .post-content {
+    display: block; /* Show full content when expanded */
+}
+
+.post-content h4 {
+    font-size: 20px; /* Slightly larger subheadings */
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.post-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .post-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .post-info {
+        text-align: center;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

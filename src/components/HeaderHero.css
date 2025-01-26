@@ -1,0 +1,211 @@
+/* Updated HeaderHero.css with Hamburger Menu */
+
+.header-hero {
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url('/Users/shekhzad/Projects/AmirEventlocation/v1/public/assets/amir-event-location-03.jpg'); /* Update with correct path */
+
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-end; /* Align items to the bottom */
+
+    justify-content: space-between; 
+    position: relative;
+    transition: background-image 0.5s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-left ul,
+.nav-right ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+    padding: 0;
+}
+
+.nav-left ul li a,
+.nav-right ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-left ul li a:hover,
+.nav-right ul li a:hover {
+    color: #ff9900;
+}
+
+.logo-container {
+    text-align: center;
+    flex: 1;
+}
+
+.logo {
+    height: 60px;
+    max-width: 150px;
+    object-fit: contain;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-right: 10px; 
+
+    
+}
+
+.social-icons a:hover {
+    color: #ff9000;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.hero-content,
+.container {
+    position: relative;
+    z-index: 2; /* Place content above overlay */
+}
+
+.btn-primary {
+    background: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background: #e67e00;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    transition: 0.3s;
+    
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    background: #D4AF37;
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Show hamburger menu and mobile navigation on smaller screens */
+@media (max-width: 768px) {
+    .nav-left ul,
+    .nav-right ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu.open {
+        display: block;
+    }
+    hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

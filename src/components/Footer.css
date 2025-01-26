@@ -1,0 +1,185 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 15px 30px; /* Increased horizontal padding for better spacing */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+}
+
+.footer-left {
+    text-align: left;
+    flex: 1;
+    font-size: 14px; /* Consistent font size */
+}
+
+.footer-right {
+    text-align: right;
+    flex: 1;
+    display: flex;
+    justify-content: space; /* Align links to the right */
+    gap: 20px; /* Add spacing between the Impressum and Datenschutzerklärung links */
+    flex-wrap: wrap; /* Ensure links wrap properly if they exceed the width */
+}
+
+.footer-link {
+    background: none;
+    border: none;
+    color: #D4AF37;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    color: #333;
+    padding: 25px 40px; /* More padding for a clean layout */
+    border-radius: 8px;
+    width: 80%;
+    max-width: 700px; /* Slightly smaller max width for better readability */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow-y: auto;
+    max-height: 80%;
+}
+
+.modal-content h4 {
+    font-size: 24px;
+    color: #D4AF37;
+    margin-bottom: 15px;
+    font-weight: bold; /* Emphasize the title */
+}
+
+.modal-date {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic; /* Add a style to distinguish the date */
+}
+
+.modal-section h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.modal-subsection h6 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #D4AF37;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.modal-subsection p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    text-align: justify; /* Optional for better text alignment */
+}
+
+.modal-subsection ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-subsection li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    padding-left: 20px;
+    position: relative;
+}
+
+.modal-subsection li::before {
+    content: '•'; /* Custom bullet point */
+    color: #D4AF37;
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.close-modal {
+    background: #D4AF37;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 14px;
+}
+
+.close-modal:hover {
+    background: #b38e2e;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+        flex: none;
+    }
+
+    .footer-right {
+        margin-top: 10px;
+    }
+
+    .modal-content {
+        width: 90%; /* Adjust width for smaller screens */
+        max-height: 75%; /* Reduce height for better fit */
+    }
+
+    .modal-content h4 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .modal-section h5,
+    .modal-subsection h6 {
+        font-size: 18px;
+    }
+}

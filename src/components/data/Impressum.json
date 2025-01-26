@@ -1,0 +1,51 @@
+{
+    "title": "Impressum",
+    "content": [
+        {
+            "section": "Angaben gemäß § 5 TMG",
+            "details": [
+                "Amir Event Location",
+                "Inhaber: Amer Razko",
+                "Rahdener Str. 3",
+                "32479 Hille",
+                "Deutschland"
+            ]
+        },
+        {
+            "section": "Verantwortlich für den Inhalt",
+            "details": [
+                "Amir Event Location",
+                "Inhaber: Amer Razko",
+                "Rahdener Str. 3",
+                "32479 Hille",
+                "Deutschland",
+                "Telefon: +49 (0)170 8248247"
+            ]
+        },
+        {
+            "section": "Redaktionell verantwortlich",
+            "details": ["Amer Razko"]
+        },
+        {
+            "section": "Hyperlinks",
+            "details": [
+                "Trotz sorgfältiger Prüfung kann keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der auf dieser Website bereitgestellten Informationen übernommen werden.",
+                "Für die Inhalte externer Websites, auf die mittels Hyperlink verwiesen wird, sind ausschließlich deren Betreiber verantwortlich. Der Betreiber dieser Website übernimmt keine Haftung für Inhalte auf verlinkten Seiten Dritter."
+            ]
+        },
+        {
+            "section": "Urheberrecht / Verstöße",
+            "details": [
+                "Trotz gewissenhafter Recherche und Überprüfung aller Inhalte kann es zu unbeabsichtigten Fehlern kommen. Sollten Ihnen Rechtsverstöße oder andere Unregelmäßigkeiten auf unseren Seiten auffallen, informieren Sie uns bitte umgehend. Wir werden uns bemühen, so schnell wie möglich Abhilfe zu schaffen."
+            ]
+        },
+        {
+            "section": "Informationen zur Online-Streitbeilegung",
+            "details": [
+                "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (sog. „OS-Plattform“) bereit. Diese Plattform dient als zentrale Anlaufstelle zur außergerichtlichen Beilegung von Streitigkeiten in Zusammenhang mit Online-Kaufverträgen.",
+                "Sie können die Plattform unter folgendem Link erreichen:",
+                "http://ec.europa.eu/consumers/odr/"
+            ]
+        }
+    ]
+}

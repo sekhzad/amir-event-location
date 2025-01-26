@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './UberUns.css';
 import content from './data/uberUnsContent.json';
 import Breadcrumb from './Breadcrumb';

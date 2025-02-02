@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/amir-event-location/static/css/main.7ad7634f.css",
-    "main.js": "/amir-event-location/static/js/main.63ffdaa2.js",
-    "static/media/amir-event-logo-transparent.png": "/amir-event-location/static/media/amir-event-logo-transparent.46dc121a82f049a9aded.png",
+    "main.css": "/amir-event-location/static/css/main.f211f6ce.css",
+    "main.js": "/amir-event-location/static/js/main.d0219279.js",
     "static/media/amir-event-location-03.jpg": "/amir-event-location/static/media/amir-event-location-03.73f7f9c94127f70b0d7b.jpg",
     "index.html": "/amir-event-location/index.html",
-    "main.7ad7634f.css.map": "/amir-event-location/static/css/main.7ad7634f.css.map",
-    "main.63ffdaa2.js.map": "/amir-event-location/static/js/main.63ffdaa2.js.map"
+    "main.f211f6ce.css.map": "/amir-event-location/static/css/main.f211f6ce.css.map",
+    "main.d0219279.js.map": "/amir-event-location/static/js/main.d0219279.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ad7634f.css",
-    "static/js/main.63ffdaa2.js"
+    "static/css/main.f211f6ce.css",
+    "static/js/main.d0219279.js"
   ]
 }
